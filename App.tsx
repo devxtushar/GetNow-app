@@ -17,7 +17,7 @@ const App = () => {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <StatusBar backgroundColor="white" />
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Order">
+        <Stack.Navigator initialRouteName="Order-Detail">
           <Stack.Screen
             name="Products"
             component={ProductScreen}
@@ -29,7 +29,7 @@ const App = () => {
             options={{ headerShown: true, headerTitle: 'Product Detail' }}
           />
           <Stack.Screen
-            name="Order"
+            name="Order-Detail"
             component={OrderDetailScreen}
             options={{ headerShown: true, headerTitle: 'Order Detail' }}
           />
