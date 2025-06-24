@@ -23,7 +23,7 @@ const ProductScreen = () => {
     <ScreenContainer scroll>
       <View className="mb-5">
         <Image
-          source={require('./src/assests/images/search.png')}
+          source={require('../assests/images/search.png')}
           style={{ width: '100%' }}
           resizeMode="cover"
         />
