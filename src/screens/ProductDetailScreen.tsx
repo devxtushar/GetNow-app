@@ -14,7 +14,6 @@ const ProductDetailScreen = () => {
   const { title, thumbnail, packages, packagesTitle, price, relatedProd, id } =
     route.params.data;
   const cartProducts = useSelector((state: any) => state.cartSlice.items);
-  console.log(cartProducts);
 
   return (
     <ScreenContainer scroll>
