@@ -15,7 +15,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Carousel from 'react-native-reanimated-carousel';
 import { useSharedValue } from 'react-native-reanimated';
 import { GlobalStyle } from '../styling/GlobalStyle';
-const ProductScreen = () => {
+const ProductScreen = ({ navigation }: { navigation: any }) => {
   const width = Dimensions.get('window').width;
   const progress = useSharedValue<number>(0);
   const [category, setCategory] = useState(false);
@@ -150,7 +150,14 @@ const ProductScreen = () => {
                 const { thumbnail, title, price, packages, packagesTitle } =
                   item;
                 return (
-                  <View style={{ width: 143 }}>
+                  <Pressable
+                    style={{ width: 143 }}
+                    onPress={() =>
+                      navigation.navigate('Product-Detail', {
+                        data: item,
+                      })
+                    }
+                  >
                     <View className="flex flex-row justify-center">
                       <Image
                         source={thumbnail}
@@ -183,7 +190,7 @@ const ProductScreen = () => {
                     >
                       {packages} {packagesTitle}
                     </Text>
-                  </View>
+                  </Pressable>
                 );
               }}
             />

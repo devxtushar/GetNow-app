@@ -7,7 +7,7 @@ export interface Product {
   packages: number;
   packagesTitle: string;
   thumbnail: string;
-  relatedProdIds: string[];
+  relatedProd: string[];
 }
 export interface Categoires {
   id: string;
@@ -53,7 +53,10 @@ export const products: Product[] = [
     price: 0.27,
     packages: 1,
     packagesTitle: 'banana',
-    relatedProdIds: ['p2', 'p3'],
+    relatedProd: [
+      require('../assests/images/p2.jpg'),
+      require('../assests/images/p3.jpg'),
+    ],
   },
   {
     id: 'p2',
@@ -64,7 +67,10 @@ export const products: Product[] = [
     price: 2.21,
     packages: 1,
     packagesTitle: 'avocado',
-    relatedProdIds: ['p1', 'p3'],
+    relatedProd: [
+      require('../assests/images/p1.jpg'),
+      require('../assests/images/p3.jpg'),
+    ],
   },
   {
     id: 'p3',
@@ -75,7 +81,10 @@ export const products: Product[] = [
     price: 1.04,
     packages: 1,
     packagesTitle: 'tomato',
-    relatedProdIds: ['p1', 'p2'],
+    relatedProd: [
+      require('../assests/images/p1.jpg'),
+      require('../assests/images/p2.jpg'),
+    ],
   },
   {
     id: 'p4',
@@ -86,7 +95,10 @@ export const products: Product[] = [
     price: 9.89,
     packages: 12,
     packagesTitle: 'fl oz',
-    relatedProdIds: ['p5', 'p6'],
+    relatedProd: [
+      require('../assests/images/p5.jpg'),
+      require('../assests/images/p6.jpg'),
+    ],
   },
   {
     id: 'p5',
@@ -97,7 +109,10 @@ export const products: Product[] = [
     price: 5.49,
     packages: 52,
     packagesTitle: 'fl oz',
-    relatedProdIds: ['p4', 'p6'],
+    relatedProd: [
+      require('../assests/images/p4.jpg'),
+      require('../assests/images/p6.jpg'),
+    ],
   },
   {
     id: 'p6',
@@ -108,7 +123,10 @@ export const products: Product[] = [
     price: 4.39,
     packages: 24,
     packagesTitle: 'fl oz',
-    relatedProdIds: ['p4', 'p5'],
+    relatedProd: [
+      require('../assests/images/p4.jpg'),
+      require('../assests/images/p5.jpg'),
+    ],
   },
   {
     id: 'p7',
@@ -119,7 +137,10 @@ export const products: Product[] = [
     price: 10.44,
     packages: 15,
     packagesTitle: 'oz',
-    relatedProdIds: ['p8', 'p9'],
+    relatedProd: [
+      require('../assests/images/p8.jpg'),
+      require('../assests/images/p9.jpg'),
+    ],
   },
   {
     id: 'p8',
@@ -131,7 +152,10 @@ export const products: Product[] = [
     price: 7.69,
     packages: 55,
     packagesTitle: 'fl oz',
-    relatedProdIds: ['p7', 'p9'],
+    relatedProd: [
+      require('../assests/images/p7.jpg'),
+      require('../assests/images/p9.jpg'),
+    ],
   },
   {
     id: 'p9',
@@ -143,7 +167,10 @@ export const products: Product[] = [
     price: 8.49,
     packages: 52,
     packagesTitle: 'fl oz',
-    relatedProdIds: ['p7', 'p8'],
+    relatedProd: [
+      require('../assests/images/p7.jpg'),
+      require('../assests/images/p8.jpg'),
+    ],
   },
   {
     id: 'p10',
@@ -154,7 +181,10 @@ export const products: Product[] = [
     price: 5.49,
     packages: 16,
     packagesTitle: 'tea bags',
-    relatedProdIds: ['p11', 'p12'],
+    relatedProd: [
+      require('../assests/images/p11.jpg'),
+      require('../assests/images/p12.jpg'),
+    ],
   },
   {
     id: 'p11',
@@ -165,7 +195,10 @@ export const products: Product[] = [
     price: 5.49,
     packages: 12.4,
     packagesTitle: 'oz',
-    relatedProdIds: ['p10', 'p12'],
+    relatedProd: [
+      require('../assests/images/p10.jpg'),
+      require('../assests/images/p12.jpg'),
+    ],
   },
   {
     id: 'p12',
@@ -176,7 +209,10 @@ export const products: Product[] = [
     price: 2.74,
     packages: 18.4,
     packagesTitle: 'oz',
-    relatedProdIds: ['p10', 'p11'],
+    relatedProd: [
+      require('../assests/images/p10.jpg'),
+      require('../assests/images/p11.jpg'),
+    ],
   },
   {
     id: 'p13',
@@ -187,7 +223,10 @@ export const products: Product[] = [
     price: 6.15,
     packages: 9.3,
     packagesTitle: 'oz',
-    relatedProdIds: ['p14', 'p15'],
+    relatedProd: [
+      require('../assests/images/p14.jpg'),
+      require('../assests/images/p15.jpg'),
+    ],
   },
   {
     id: 'p14',
@@ -198,7 +237,10 @@ export const products: Product[] = [
     price: 5.49,
     packages: 8.5,
     packagesTitle: 'oz',
-    relatedProdIds: ['p13', 'p15'],
+    relatedProd: [
+      require('../assests/images/p13.jpg'),
+      require('../assests/images/p15.jpg'),
+    ],
   },
   {
     id: 'p15',
@@ -209,7 +251,10 @@ export const products: Product[] = [
     price: 6.15,
     packages: 9.2,
     packagesTitle: 'oz',
-    relatedProdIds: ['p13', 'p14'],
+    relatedProd: [
+      require('../assests/images/p13.jpg'),
+      require('../assests/images/p14.jpg'),
+    ],
   },
   {
     id: 'p16',
@@ -220,7 +265,10 @@ export const products: Product[] = [
     price: 11.54,
     packages: 1.5,
     packagesTitle: 'lbs',
-    relatedProdIds: ['p17', 'p18'],
+    relatedProd: [
+      require('../assests/images/p17.jpg'),
+      require('../assests/images/p18.jpg'),
+    ],
   },
   {
     id: 'p17',
@@ -231,7 +279,10 @@ export const products: Product[] = [
     price: 7.69,
     packages: 12,
     packagesTitle: 'oz',
-    relatedProdIds: ['p16', 'p18'],
+    relatedProd: [
+      require('../assests/images/p16.jpg'),
+      require('../assests/images/p18.jpg'),
+    ],
   },
   {
     id: 'p18',
@@ -242,7 +293,10 @@ export const products: Product[] = [
     price: 7.14,
     packages: 16,
     packagesTitle: 'oz',
-    relatedProdIds: ['p16', 'p17'],
+    relatedProd: [
+      require('../assests/images/p16.jpg'),
+      require('../assests/images/p17.jpg'),
+    ],
   },
   {
     id: 'p19',
@@ -253,7 +307,10 @@ export const products: Product[] = [
     price: 5.49,
     packages: 8,
     packagesTitle: 'oz',
-    relatedProdIds: ['p20', 'p21'],
+    relatedProd: [
+      require('../assests/images/p20.jpg'),
+      require('../assests/images/p21.jpg'),
+    ],
   },
   {
     id: 'p20',
@@ -264,7 +321,10 @@ export const products: Product[] = [
     price: 7.7,
     packages: 0.5,
     packagesTitle: 'lb',
-    relatedProdIds: ['p19', 'p21'],
+    relatedProd: [
+      require('../assests/images/p19.jpg'),
+      require('../assests/images/p21.jpg'),
+    ],
   },
   {
     id: 'p21',
@@ -275,7 +335,10 @@ export const products: Product[] = [
     price: 5.49,
     packages: 8,
     packagesTitle: 'oz',
-    relatedProdIds: ['p19', 'p20'],
+    relatedProd: [
+      require('../assests/images/p19.jpg'),
+      require('../assests/images/p20.jpg'),
+    ],
   },
 ];
 

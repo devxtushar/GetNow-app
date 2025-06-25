@@ -2,18 +2,22 @@ import React from 'react';
 import { Image, View, Text } from 'react-native';
 import ScreenContainer from '../components/ScreenContainer';
 import { GlobalStyle } from '../styling/GlobalStyle';
+import { useRoute } from '@react-navigation/native';
 
 const ProductDetailScreen = () => {
+  const route = useRoute<any>();
+  const { title, thumbnail, packages, packagesTitle, price, relatedProd } =
+    route.params.data;
   return (
     <ScreenContainer scroll>
       <View className="mb-10">
         <Image
-          source={require('../assests/images/p1.jpg')}
+          source={thumbnail}
           style={{ width: '100%', height: 250 }}
-          resizeMode="cover"
+          resizeMode="contain"
         />
         <Text className="font-sans font-bold" style={{ fontSize: 24 }}>
-          Organic Banana
+          {title}
         </Text>
       </View>
       <View className="flex flex-col gap-5">
@@ -23,15 +27,17 @@ const ProductDetailScreen = () => {
           </Text>
           <View style={GlobalStyle.infoContainer}>
             <Text style={GlobalStyle.infoLabel}>Price</Text>
-            <Text style={GlobalStyle.infoValue}>$0.27/pc</Text>
+            <Text style={GlobalStyle.infoValue}>${price}/pc</Text>
           </View>
           <View style={GlobalStyle.infoContainer}>
             <Text style={GlobalStyle.infoLabel}>Price per ground</Text>
-            <Text style={GlobalStyle.infoValue}>$1.09/lb</Text>
+            <Text style={GlobalStyle.infoValue}>${price}/lb</Text>
           </View>
           <View style={GlobalStyle.infoContainer}>
             <Text style={GlobalStyle.infoLabel}>Package</Text>
-            <Text style={GlobalStyle.infoValue}>1 banana</Text>
+            <Text style={GlobalStyle.infoValue}>
+              {packages} {packagesTitle}
+            </Text>
           </View>
         </View>
         <View>
