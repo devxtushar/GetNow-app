@@ -14,11 +14,19 @@ import { Colors } from '../styling/Colors';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Carousel from 'react-native-reanimated-carousel';
 import { useSharedValue } from 'react-native-reanimated';
+import { useSelector } from 'react-redux';
 import { GlobalStyle } from '../styling/GlobalStyle';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/slice/cartSlice';
+
 const ProductScreen = ({ navigation }: { navigation: any }) => {
   const width = Dimensions.get('window').width;
   const progress = useSharedValue<number>(0);
   const [category, setCategory] = useState(false);
+
+  const dispatch = useDispatch();
+  const cartProducts = useSelector((state: any) => state.cartSlice.items);
+
   return (
     <ScreenContainer scroll>
       <View className="mb-5">
@@ -147,7 +155,7 @@ const ProductScreen = ({ navigation }: { navigation: any }) => {
               showsHorizontalScrollIndicator={false}
               contentContainerStyle={{ gap: 10 }}
               renderItem={({ item }: { item: any }) => {
-                const { thumbnail, title, price, packages, packagesTitle } =
+                const { thumbnail, title, price, packages, packagesTitle, id } =
                   item;
                 return (
                   <Pressable
@@ -158,12 +166,24 @@ const ProductScreen = ({ navigation }: { navigation: any }) => {
                       })
                     }
                   >
-                    <View className="flex flex-row justify-center">
-                      <Image
-                        source={thumbnail}
-                        style={{ width: 100, height: 100 }}
-                      />
+                    <View>
+                      <View className="flex flex-row justify-center relative">
+                        <Image
+                          source={thumbnail}
+                          style={{ width: 100, height: 100 }}
+                        />
+                      </View>
+                      {!cartProducts.find((i: any) => i.product.id === id) && (
+                        <Pressable
+                          onPress={() => dispatch(addToCart(item))}
+                          className="absolute"
+                          style={GlobalStyle.addProdBtn}
+                        >
+                          <MaterialIcons name="add" size={22} />
+                        </Pressable>
+                      )}
                     </View>
+
                     <Text
                       className="font-sans"
                       style={{

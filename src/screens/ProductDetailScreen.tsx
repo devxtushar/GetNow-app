@@ -47,12 +47,14 @@ const ProductDetailScreen = () => {
           <View style={GlobalStyle.nutriContainer}>
             <View style={GlobalStyle.infoContainer}>
               <Text style={GlobalStyle.infoValue}>
-                Serving size about 1 banana
+                Serving size about {packages} {packagesTitle}
               </Text>
             </View>
             <View style={GlobalStyle.parentDivider} />
             <View style={GlobalStyle.infoContainer}>
-              <Text style={GlobalStyle.infoValue}>Calories 110</Text>
+              <Text style={GlobalStyle.infoValue}>
+                Calories {110 + packages}
+              </Text>
               <Text style={GlobalStyle.infoValue}>% Daily Value</Text>
             </View>
             <View style={GlobalStyle.parentDivider} />
@@ -141,6 +143,17 @@ const ProductDetailScreen = () => {
           <Text style={GlobalStyle.infoValue} className="mb-2">
             Related
           </Text>
+          <View className="flex flex-row gap-5">
+            {relatedProd.map((item: any, idx: number) => (
+              <View
+                className="p-2"
+                style={GlobalStyle.customBoxShadow}
+                key={idx}
+              >
+                <Image source={item} style={{ width: 80, height: 80 }} />
+              </View>
+            ))}
+          </View>
         </View>
       </View>
     </ScreenContainer>

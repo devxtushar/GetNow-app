@@ -29,4 +29,22 @@ export const GlobalStyle = StyleSheet.create({
     borderBottomWidth: 1,
     marginVertical: 5,
   },
+  customBoxShadow: {
+    elevation: 5,
+    backgroundColor: '#fff',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+  },
+  addProdBtn: {
+    elevation: 5,
+    backgroundColor: '#fff',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 20,
+    borderRadius: 20,
+    padding: 2,
+    right: 5,
+  },
 });

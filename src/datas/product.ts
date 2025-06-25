@@ -13,6 +13,7 @@ export interface Categoires {
   id: string;
   name: string;
 }
+
 export const categories: Categoires[] = [
   {
     id: 'c1',
