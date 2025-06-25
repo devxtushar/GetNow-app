@@ -47,4 +47,11 @@ export const GlobalStyle = StyleSheet.create({
     padding: 2,
     right: 5,
   },
+  regularBtn: {
+    alignSelf: 'flex-start',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    backgroundColor: '#000',
+    borderRadius: 10,
+  },
 });

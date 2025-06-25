@@ -44,7 +44,11 @@ const App = () => {
             <Stack.Screen
               name="Product-Detail"
               component={ProductDetailScreen}
-              options={{ headerShown: true, headerTitle: 'Product Detail' }}
+              options={{
+                headerShown: true,
+                headerTitle: 'Product Detail',
+                headerRight: () => <CartIcon />,
+              }}
             />
             <Stack.Screen
               name="Order-Detail"
