@@ -13,14 +13,15 @@ const orderSlice = createSlice({
       const newOrder: Order = {
         id: Date.now().toString(),
         items: action.payload.items,
-        totalAmount: action.payload.totalAmount,
+        totalAmount: action.payload.priceWithDelivery,
         status: 'preparing',
       };
+      console.log(action.payload);
       state.orders.push(newOrder);
     },
     updateOrderStatus(state, action) {},
   },
 });
 
-const { placeOrder, updateOrderStatus } = orderSlice.actions;
+export const { placeOrder, updateOrderStatus } = orderSlice.actions;
 export default orderSlice.reducer;

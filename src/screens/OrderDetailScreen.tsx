@@ -3,14 +3,22 @@ import ScreenContainer from '../components/ScreenContainer';
 import { View, Text, Image, Button } from 'react-native';
 import { GlobalStyle } from '../styling/GlobalStyle';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { placeOrder } from '../redux/slice/orderSlice';
+import { clearCart } from '../redux/slice/cartSlice';
 
 const OrderDetailScreen = () => {
+  const dispatch = useDispatch();
   const cartItems = useSelector((state: any) => state.cartSlice.items);
+  const orderItems = useSelector((state: any) => state.orderSlice);
+
   const totalProdPrice = cartItems.reduce(
     (sum: number, item: any) => sum + item.quantity * item.product.price,
     0,
   );
+  const priceWithDelivery =
+    totalProdPrice <= 30 ? totalProdPrice + 2 : totalProdPrice;
+  console.log(orderItems, 'orderItems');
   return (
     <ScreenContainer>
       {cartItems.length > 0 ? (
@@ -118,7 +126,16 @@ const OrderDetailScreen = () => {
             <View style={GlobalStyle.childDivider} />
             {totalProdPrice >= 10 && (
               <View className="mt-10">
-                <Button title="Go to checkout" color="#000000" />
+                <Button
+                  title="Go to checkout"
+                  color="#000000"
+                  onPress={() => {
+                    dispatch(
+                      placeOrder({ items: cartItems, priceWithDelivery }),
+                    ),
+                      dispatch(clearCart());
+                  }}
+                />
               </View>
             )}
           </View>
