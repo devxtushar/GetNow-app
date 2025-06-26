@@ -7,10 +7,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import { placeOrder } from '../redux/slice/orderSlice';
 import { clearCart } from '../redux/slice/cartSlice';
 
-const OrderDetailScreen = () => {
+const OrderDetailScreen = ({ navigation }: { navigation: any }) => {
   const dispatch = useDispatch();
   const cartItems = useSelector((state: any) => state.cartSlice.items);
-  const orderItems = useSelector((state: any) => state.orderSlice);
 
   const totalProdPrice = cartItems.reduce(
     (sum: number, item: any) => sum + item.quantity * item.product.price,
@@ -18,7 +17,6 @@ const OrderDetailScreen = () => {
   );
   const priceWithDelivery =
     totalProdPrice <= 30 ? totalProdPrice + 2 : totalProdPrice;
-  console.log(orderItems, 'orderItems');
   return (
     <ScreenContainer>
       {cartItems.length > 0 ? (
@@ -130,10 +128,18 @@ const OrderDetailScreen = () => {
                   title="Go to checkout"
                   color="#000000"
                   onPress={() => {
+                    const createOrderId = Date.now().toString(); // here created a order id to send to track order screen, redux it not return any thing like in api return when place order
                     dispatch(
-                      placeOrder({ items: cartItems, priceWithDelivery }),
+                      placeOrder({
+                        orderId: createOrderId,
+                        items: cartItems,
+                        priceWithDelivery,
+                      }),
                     ),
-                      dispatch(clearCart());
+                      dispatch(clearCart()),
+                      navigation.navigate('Track-Order', {
+                        orderId: createOrderId,
+                      });
                   }}
                 />
               </View>

@@ -8,19 +8,15 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import ProductDetailScreen from './src/screens/ProductDetailScreen';
 import OrderDetailScreen from './src/screens/OrderDetailScreen';
 import TrackOrderScreen from './src/screens/TrackOrderScreen';
-import DeliveredScreen from './src/screens/DeliveredScreen';
 import CartIcon from './src/components/CartIcon';
 import { Provider } from 'react-redux';
 import store from './src/redux/store';
-
-import { Product } from './src/datas/product';
 
 export type RootStackParamList = {
   Products: undefined;
   'Product-Detail': undefined;
   'Order-Detail': undefined;
   'Track-Order': undefined;
-  Delivered: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -59,11 +55,6 @@ const App = () => {
               name="Track-Order"
               component={TrackOrderScreen}
               options={{ headerShown: true, headerTitle: 'Track Order' }}
-            />
-            <Stack.Screen
-              name="Delivered"
-              component={DeliveredScreen}
-              options={{ headerShown: true, headerTitle: 'Delivered' }}
             />
           </Stack.Navigator>
         </NavigationContainer>
