@@ -5,7 +5,6 @@ import { GlobalStyle } from '../styling/GlobalStyle';
 import { useRoute } from '@react-navigation/native';
 import { useSelector, useDispatch } from 'react-redux';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import { Colors } from '../styling/Colors';
 import { addToCart, decreaseQty, increaseQty } from '../redux/slice/cartSlice';
 
 const ProductDetailScreen = () => {

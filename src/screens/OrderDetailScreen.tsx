@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ScreenContainer from '../components/ScreenContainer';
 import { View, Text, Image, Button } from 'react-native';
 import { GlobalStyle } from '../styling/GlobalStyle';
