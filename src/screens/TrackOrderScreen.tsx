@@ -71,6 +71,10 @@ const TrackOrderScreen = () => {
             <Text style={{ fontSize: 24, fontWeight: 500 }}>
               Preparing your order...
             </Text>
+            <Image
+              source={require('../assests/images/trackerGreen.png')}
+              style={{ width: '100%' }}
+            />
             <Text style={{ fontSize: 16, fontWeight: 400 }}>
               Arriving in <Text className="font-bold">{countdown}s</Text>
             </Text>
@@ -96,6 +100,10 @@ const TrackOrderScreen = () => {
             <Text style={{ fontSize: 24, fontWeight: 500 }}>
               Almost there...
             </Text>
+            <Image
+              source={require('../assests/images/altTrackerGreen.png')}
+              style={{ width: '100%' }}
+            />
             <Text style={{ fontSize: 16, fontWeight: 400 }}>
               Arriving in <Text className="font-bold">{countdown}s</Text>
             </Text>
