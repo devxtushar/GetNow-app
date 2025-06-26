@@ -257,7 +257,9 @@ const TrackOrderScreen = () => {
 
             <View style={GlobalStyle.infoContainer}>
               <Text style={GlobalStyle.infoLabel}>Total</Text>
-              <Text style={GlobalStyle.infoValue}>US${totalAmount}</Text>
+              <Text style={GlobalStyle.infoValue}>
+                US${totalAmount.toFixed(2)}
+              </Text>
             </View>
           </View>
         </View>

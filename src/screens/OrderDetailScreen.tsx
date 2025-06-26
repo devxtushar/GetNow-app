@@ -116,6 +116,7 @@ const OrderDetailScreen = ({ navigation }: { navigation: any }) => {
             <View style={GlobalStyle.infoContainer}>
               <Text style={GlobalStyle.infoLabel}>Total amount</Text>
               <Text style={GlobalStyle.infoValue}>
+                $
                 {totalProdPrice <= 30
                   ? (totalProdPrice + 2).toFixed(2)
                   : totalProdPrice.toFixed(2)}
