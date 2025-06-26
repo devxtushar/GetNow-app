@@ -128,4 +128,4 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 - **Tracker Overview:**
   ![Tracker](https://drive.google.com/uc?id=1RYGb6IgluGfNU5gojy4HxuR_ZCnN6KQA)
 
-> Built with ❤️ by [devxtushar]
+> Built with ❤️ by devxtushar
