@@ -1,4 +1,4 @@
-# 💼 React Native Shopping App
+# 💼 GetNow Shopping App
 
 GetNow brings your favorite local stores online groceries, food, medicines and more delivered in just minutes. It's a mobile shopping application built with **React Native**, offering product listings, detail views, cart functionality, checkout process, and order tracking.
 
@@ -18,7 +18,7 @@ GetNow brings your favorite local stores online groceries, food, medicines and m
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/devxtushar/GetNow.git
    cd your-repo
    ```
 
