@@ -1,6 +1,6 @@
 # 💼 React Native Shopping App
 
-A mobile shopping application built with **React Native**, offering product listings, detail views, cart functionality, checkout process, and order tracking.
+GetNow brings your favorite local stores online groceries, food, medicines and more delivered in just minutes. It's a mobile shopping application built with **React Native**, offering product listings, detail views, cart functionality, checkout process, and order tracking.
 
 ---
 
