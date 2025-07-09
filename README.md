@@ -102,30 +102,18 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 ## 📸 4. Screenshots
 
 - **Home Screen:**
-  ![Home](https://drive.google.com/uc?id=1p7iWPrvQ30_ljcL5mFUpbDnx_5nVwS6f)
-
-- **Product Listing:**
-  ![Product](https://drive.google.com/uc?id=1VCMqXTRrgPsK9QmUzJAraZetyrxZwD5z)
+  ![Home](https://drive.google.com/file/d/1RPuYekYMfbPxPPMKbbmT3Esyzn8idoiP)
 
 - **Product Detail:**
-  ![Detail](https://drive.google.com/uc?id=1ZmBPGKyCPTO3xlFNSVveyXgDoYk0tMhm)
-
-- **Order Detail:**
-  ![Order](https://drive.google.com/uc?id=1w43f_BSrWsCJsNFUT3PrSfw4ziwVPTkq)
+  ![Detail](https://drive.google.com/file/d/1YQEoFLAHMYEK3QA1mrugORDkdeuU5Mrg)
 
 - **Cart Items:**
-  ![Cart](https://drive.google.com/uc?id=1arMtklbmF27pqLiQbAE3D1tVQwUf7cpO)
+  ![Cart](https://drive.google.com/file/d/1khXLAas2zevJmn0b9v8ug3TVk4mXwtFw)
 
 - **Track Order - Preparing:**
-  ![Preparing](https://drive.google.com/uc?id=1ki7-xlsYg15qR6EYXPBV127GHcJ0gSVk)
+  ![Preparing](https://drive.google.com/file/d/1eXW1H6bQPZ0AFDFErNa_QV8KfuIr4ACd)
 
 - **Track Order - Out for Delivery:**
-  ![Out](https://drive.google.com/uc?id=1YXkit7GJ97ZRJXxnGfpLrJZphleHDa3P)
-
-- **Track Order - Delivered:**
-  ![Delivered](https://drive.google.com/uc?id=1yTCIBnkRyyB7LmdzyWugaUxv5neuM0CW)
-
-- **Tracker Overview:**
-  ![Tracker](https://drive.google.com/uc?id=1RYGb6IgluGfNU5gojy4HxuR_ZCnN6KQA)
+  ![Out](https://drive.google.com/file/d/1WSz8_6cMPLs4nTW-6hIJ6QaoBZ9XSZVV)
 
 > Built with ❤️ by devxtushar
