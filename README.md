@@ -114,6 +114,6 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
   ![Preparing](https://drive.google.com/file/d/1eXW1H6bQPZ0AFDFErNa_QV8KfuIr4ACd)
 
 - **Track Order - Out for Delivery:**
-  ![Out](https://drive.google.com/file/d/1WSz8_6cMPLs4nTW-6hIJ6QaoBZ9XSZVV)
+  ![Out](https://drive.google.com/file/d/1WSz8_6cMPLs4nTW-6hIJ6QaoBZ9XSZVV/view?usp=sharing)
 
 > Built with ❤️ by devxtushar
