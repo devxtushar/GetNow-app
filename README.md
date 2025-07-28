@@ -93,13 +93,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 ---
 
-## 🎥 3. Demo Recording
-
-[Click here to watch the demo](https://drive.google.com/file/d/1ZWpQWI651S6htN4k1SJa-GidiWyy2wPW/view?usp=drive_link)
-
----
-
-## 📸 4. Screenshots
+## 📸 3. Screenshots
 
 - **Home Screen:**
   ![Home](https://drive.google.com/file/d/1RPuYekYMfbPxPPMKbbmT3Esyzn8idoiP)
