@@ -96,7 +96,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 ## 📸 3. Screenshots
 
 - **Home Screen:**
-  ![Home](https://drive.google.com/file/d/1RPuYekYMfbPxPPMKbbmT3Esyzn8idoiP)
+  ![Home](https://drive.google.com/file/d/1RPuYekYMfbPxPPMKbbmT3Esyzn8idoiP/view?usp=drive_link)
 
 - **Product Detail:**
   ![Detail](https://drive.google.com/file/d/1YQEoFLAHMYEK3QA1mrugORDkdeuU5Mrg)
