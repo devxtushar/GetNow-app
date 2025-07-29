@@ -98,16 +98,17 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 - **Home Screen:**
   ![Home](https://drive.google.com/uc?export=view&id=1RPuYekYMfbPxPPMKbbmT3Esyzn8idoiP)
 
-- **Product Detail:**
-  ![Detail](https://drive.google.com/file/d/1YQEoFLAHMYEK3QA1mrugORDkdeuU5Mrg)
+- **Product Detail:**  
+  ![Detail](https://drive.google.com/uc?export=view&id=1YQEoFLAHMYEK3QA1mrugORDkdeuU5Mrg)
 
-- **Cart Items:**
-  ![Cart](https://drive.google.com/file/d/1khXLAas2zevJmn0b9v8ug3TVk4mXwtFw)
+- **Cart Items:**  
+  ![Cart](https://drive.google.com/uc?export=view&id=1khXLAas2zevJmn0b9v8ug3TVk4mXwtFw)
 
-- **Track Order - Preparing:**
-  ![Preparing](https://drive.google.com/file/d/1eXW1H6bQPZ0AFDFErNa_QV8KfuIr4ACd)
+- **Track Order - Preparing:**  
+  ![Preparing](https://drive.google.com/uc?export=view&id=1eXW1H6bQPZ0AFDFErNa_QV8KfuIr4ACd)
 
-- **Track Order - Out for Delivery:**
-  ![Out](https://drive.google.com/file/d/1WSz8_6cMPLs4nTW-6hIJ6QaoBZ9XSZVV/view?usp=sharing)
+- **Track Order - Out for Delivery:**  
+  ![Out](https://drive.google.com/uc?export=view&id=1WSz8_6cMPLs4nTW-6hIJ6QaoBZ9XSZVV)
+
 
 > Built with ❤️ by devxtushar
