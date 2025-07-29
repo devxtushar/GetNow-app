@@ -96,16 +96,24 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 ## 📸 3. Screenshots
 
 - **Home Screen:**
+  
   ![Home](https://drive.google.com/uc?export=view&id=1RPuYekYMfbPxPPMKbbmT3Esyzn8idoiP)
+  
 
-- **Product Detail:**  
+- **Product Detail:**
+  
   ![Detail](https://drive.google.com/uc?export=view&id=1YQEoFLAHMYEK3QA1mrugORDkdeuU5Mrg)
+  
 
-- **Cart Items:**  
+- **Cart Items:**
+  
   ![Cart](https://drive.google.com/uc?export=view&id=1khXLAas2zevJmn0b9v8ug3TVk4mXwtFw)
+  
 
-- **Track Order - Preparing:**  
+- **Track Order - Preparing:**
+  
   ![Preparing](https://drive.google.com/uc?export=view&id=1eXW1H6bQPZ0AFDFErNa_QV8KfuIr4ACd)
+  
 
 - **Track Order - Out for Delivery:**  
   ![Out](https://drive.google.com/uc?export=view&id=1WSz8_6cMPLs4nTW-6hIJ6QaoBZ9XSZVV)
